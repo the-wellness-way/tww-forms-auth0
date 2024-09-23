@@ -1,0 +1,16 @@
+{
+    "name": "prudy/tww-forms-auth0",
+    "version": "1.0.0",
+    "autoload": {
+        "psr-4": {
+            "TwwFormsAuth0\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Philip Rudy",
+            "email": "me@philiparudy.com"
+        }
+    ],
+    "require": {}
+}
