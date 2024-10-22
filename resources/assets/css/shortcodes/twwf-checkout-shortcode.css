@@ -1,0 +1,814 @@
+.register-template {
+    --brand-green: #80b741;
+    --brand-grey: rgb(136, 136, 136);
+    --border-grey: rgb(204, 204, 204);
+    --border-grey-light: rgb(238, 238, 238);
+
+    --tww-green: #80b741;
+    --tww-dark-grey: #666;
+    --tww-medium-grey: #888;
+    --tww-medium-light-grey: #a8a8a8;
+    --tww-light-grey: #ddddde;
+    --tww-beige: #dcd4cb;
+
+    --white: white;
+    --tww-white: white;
+
+    --black: rgb(0, 0, 0);
+    --red: rgb(153, 27, 27);
+
+    --active: rgb(220, 252, 231);
+    --active-alt: rgb(22, 101, 52);
+    --canceled: var(--red);
+    --pending: rgb(255, 255, 0);
+
+    --error_red: #b32d2e;
+    --error_red_rgba: rgba(179, 45, 46, 0.2);
+}
+
+.site-header {
+    display: none;
+}
+
+.header-logo {
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .mp_wrapper--all {
+        padding-bottom: 160px;
+    }
+}
+
+.register-template .success-message p,
+.register-template .error-message p {
+    margin: 0;
+}
+
+.register-template .success-message,
+.register-template .error-message {
+    padding: 10px;
+}
+
+.register-template .error-message p {
+    color: #b32d2e !important;
+    font-size: 14px;
+}
+
+.register-template .error-message {
+    padding: 10px;
+    background-color: var(--error_red_rgba);
+}
+
+.register-template .tww-change-plan-modal--inner, .tww-plus-modal__inner {
+    padding: 0;
+    border: none;
+}
+
+.register-template__main-page-content {
+    height: auto;
+    min-height: 1450px;
+    position: relative;
+}
+
+.register-temlate__order-summary-header div {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--tww-medium-grey);
+    margin-bottom: 10px;
+}
+
+.register-template__entry,
+.register-template__entry--discount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #e2e2e2;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+.register-template__entry--total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.register-template__entry--coupon{
+    align-items: center;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 20px;
+    border-top: 1px solid black;
+}
+
+.register-template {
+    padding: 0;
+}
+
+.register-template button {
+    cursor: pointer;
+}
+
+.register-template__order-summary {
+    position: fixed;
+    right: 0;
+    min-width: 300px;
+    max-width: 400px;
+    width: 100%;
+    background: #f4f5f2;
+    height: 100%;
+    top: 0;
+    padding: 60px 48px;
+}
+
+.register-template__input-group--names {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.register-template__input-group .register-template__input-item  {
+    width: 174px;
+}
+
+.register-template__input-group input {
+    border-radius: 4px;
+    background: transparent !important;
+}
+
+@media (max-width: 1100px) {
+    .register-template__order-summary {
+        max-width: 225px;
+    }
+}
+
+.register-template__order-summary-tagline {
+    opacity: 1;
+    color: #5a5a5a;
+    max-height: 100%;
+    margin-bottom: 12px;
+    padding: 0 0 12px;
+}
+
+.register-template__order-summary {
+    display: block;
+}
+
+
+@media (max-width: 768px) {
+    .register-template__order-summary {
+        display: none;
+    }
+
+    .register-template__order-summary.mobile-stack-on {
+        display: block;
+        max-width: 100%;
+        position: relative;
+        height: auto;
+        right: auto;
+        left: 0;
+        padding: 20px;
+        width: auto;
+        margin-bottom: 30px;
+    }
+}
+
+.register-template .tww-plus-modal__content {
+    text-align: left;
+}
+
+.register-template .tww-change-plan-modal--inner, .tww-plus-modal__inner {
+    width: auto;
+}
+
+.register-template__step-box,
+.register-template__payment-methods {
+    padding: 20px;
+    border: 1px solid var(--tww-medium-grey);
+    border-radius: 4px;
+}
+
+.register-template-container {
+    margin: 0 auto;
+    padding-right: 400px;
+    transition: .3s all ease;
+    padding-bottom: 160px;
+}
+
+@media (max-width: 768px) {
+    .register-template__order-summary {
+        display: none;
+    }
+
+    .register-template-container {
+        margin: 0 auto;
+        padding: 20px;
+        transition: .3s all ease;
+    }
+}
+
+.register-template--open .register-template-container {
+    padding-right: 0;
+    transition: .3s all ease;
+}
+
+.register-template--open .register-template__order-summary {
+    display: none;
+}
+
+.register-checkout {
+    margin: 0 auto;
+    max-width: 450px;
+}
+
+.tww-step {
+    max-width: 450px;
+    width: 100%;
+}
+
+.tww-step .tww-plus-login__fields-wrapper label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.tww-step--open {
+    display: block;
+}
+
+.tww-step--when-open {
+    display: block;
+    max-height: 0;
+    opacity: 0;
+    transition: opacity 0.2s ease, visibility 0.2s ease, max-height .3s ease; /* Faster opacity and visibility transition */
+    visibility: hidden;
+    padding: 0;
+}
+
+.tww-step--when-open-inner {
+    padding: 20px 20px 40px;
+}
+
+.tww-step--open .tww-step--when-open {
+    display: block;
+    max-height: 1000px;
+    opacity: 1;
+    transition: opacity 0.2s ease, visibility 0.2s ease, max-height .3s ease; /* Faster opacity and visibility transition */
+    visibility: visible;
+}
+
+.tww-step--open .tww-step__header {
+    border-top: 2px solid #000;
+    transition: .2s border-top ease;
+}
+
+.tww-step--review .mepr-stripe-card-errors {
+    padding: 0 10px 20px;
+}
+
+.tww-step__header {
+    border-top: 1px solid #e2e2e2;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 14px 3px;
+    transition: .2s border-top ease;
+}
+
+.tww-step__header p {
+    margin: 0 !important;
+}
+
+.tww-step__mini-description,
+.tww-step__edit {
+    margin-left: 20px;
+}
+
+.tww-step__edit {
+    color: var(--tww-dark-grey);
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.tww-step__edit-link {
+    display: none;
+}
+
+.tww-step__edit-link.active {
+    display: none;
+}
+
+.tww-step__edit-link.prev-step-editable {
+    display: block !important;
+}
+
+.tww-step--open .tww-step__mini-description,
+.tww-step--open .tww-step__edit {
+    margin-left: 20px;
+}
+
+.tww-step:last-child .tww-step__header {
+    border-bottom: 1px solid var(--tww-light-grey);
+}
+
+.tww-step__header,
+.tww-step__header .tww-step--when-collapsed {
+    display: flex;
+    align-items: center;
+}
+
+.tww-step__mini-description {
+    font-size: 14px;
+}
+
+.tww-step__header h4 {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+}
+
+.tww-step__header h4,
+.tww-step__header .tww-step--when-collapsed {
+    color: var(--tww-medium-grey);
+}
+
+.tww-step--open .tww-step__header h4,
+.tww-step--open .tww-step__header .tww-step--when-collapsed {
+    color: var(--black);
+}
+
+.tww-step--account .has-account {
+    height: auto;
+    transition: .3s all ease;
+    opacity: 1;
+}
+
+.register-template #tww-login-form input[type="password"],
+.register-template #tww-login-form input[type="text"],
+.register-template #tww-login-form input[type="email"] {
+    border-radius: 4px !important;
+    border: 1px solid var(--brand-green) !important;
+    height: 50px;
+    width: 100% !important;
+    display: flex;
+    padding: 0 10px;
+}
+
+.register-template #tww-login-form input[type="password"] {
+    border-radius: 4px !important;
+}
+
+.tww-plus-login__password {
+    position: relative;
+}
+
+.register-template .tww-plus-password-eye-btn {
+    position: absolute;
+    cursor: pointer;
+    outline: none !important;
+    border: 0 !important;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    background: white !important;
+    padding: 0 20px;
+    right: 1px;
+    border-radius: 0 4px 4px 0;
+    color: black !important;
+}
+
+.register-template #tww-login-form button[type="submit"] {
+    transform: none;
+    box-shadow: none !important;
+    width: 120px;
+    text-align: center;
+    height: 50px;
+    border: 1px solid var(--brand-green) !important;
+    right: 0;
+    top: 0;
+    border-radius: 4px !important;
+    z-index: 9;
+    background: var(--brand-green);
+    color: var(--white);
+    position: relative;
+    width: 100%;
+}
+
+.register-template #tww-login-form a.loader-default:disabled,
+.register-template #tww-login-form button.loader-default:disabled {
+    cursor: not-allowed !important;
+    background-color: var(--brand-grey) !important;
+    border: none !important;
+}
+
+.register-template #tww-login-form input.neutral {
+    border: 1px solid var(--black) !important;
+}
+
+/** Add the same styles for disabled as neutral */
+
+.register-template #tww-login-form input:disabled {
+    border: 1px solid var(--tww-light-grey) !important;
+    color: var(--tww-light-grey) !important;
+    background: transparent !important;
+}
+
+.register-template #tww-login-form input.invalid {
+    border: 1px solid #b32d2e !important;
+}
+
+.register-template #tww-login-form input.valid {
+    border: 1px solid var(--tww-green) !important;
+}
+
+.register-template .Input {
+    box-shadow: none !important;
+}
+
+.register-template .Label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.register-template__review-message {
+    padding: 20px;
+    background-color: var(--tww-light-grey);
+    margin-bottom: 20px;
+}
+
+.register-template__review-terms {
+    font-size: 14px;
+    padding: 10px;
+}
+
+/** Coupon */
+
+.register-template__entry--coupon {
+    align-items: center;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.register-template__entry--coupon .error-message {
+    margin: 0;
+}
+
+.register-template__copyright {
+    position: fixed;
+    bottom: 10px;
+    left: 20px;
+}
+
+.register-template__copyright ul {
+    display: flex;
+    padding: 0;
+}
+
+.register-template__copyright ul li {
+    display: flex;
+    list-style: none;
+    font-size: 12px;
+    padding-right: 10px;
+    color: var(--tww-dark-grey);
+}
+
+.register-template__copyright ul li a {
+    color: var(--tww-dark-grey);
+    text-decoration: none;
+}
+
+.register-template__order-summary-footer {
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+}
+
+.register-template__order-summary-footer.mobile {
+    display: none;
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.mobile-footer {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .register-template__order-summary-footer {
+        display: none;
+    }
+
+    .register-template__order-summary-footer.mobile {
+        display: block;
+        position: relative;
+        margin-top: 60px;
+    }
+
+    .register-template__order-summary-footer.mobile span {
+        margin-right: 3px;
+    }
+
+    .register-template__order-summary-footer.mobile,
+    .register-template__copyright {
+        padding: 20px;
+        display: bock;
+        position: relative;
+        text-align: center;
+        border-top: 1px solid var(--tww-light-grey);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: auto;
+    }
+
+    .register-template__copyright.non-mobile {
+        display: none;
+    }
+
+    .register-template__copyright ul {
+        margin: 0;
+    }
+
+    .mobile-footer {
+        display: block;
+        width: auto;
+    }
+
+    .mobile-footer {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 100% !important;
+    }
+
+    .mobile-footer .register-template__order-summary-footer,
+    .mobile-footer .register-template__copyright {
+        display: block;
+        left: auto;
+        right: auto;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+    }
+}
+
+.register-template__order-summary-footer span,
+.register-template__order-summary-footer a {
+    font-size: 14px;
+}
+
+.register-template__order-summary-footer a {
+    color: var(--tww-green);
+}
+
+.tww-coupon-inputs > div {
+    max-width: 65%;
+}
+
+.tww-coupon-inputs > div button,
+.tww-coupon-inputs > div input {
+    height: 40px !important;
+}
+
+.tww-coupon-inputs > div:first-child {
+    padding-right: 20px;
+}
+
+.tww-coupon-inputs > div:last-child {
+    padding-left: 0px;
+}
+
+.tww-apply-coupon-button-wrapper {
+    color: var(--tww-green);
+    font-size: 14px;
+    line-height: normal;
+    font-weight: 100;
+}
+
+
+.tww-coupon-data {
+    width: 100%;
+}
+
+.tww-coupon-inputs {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    padding: 10px 0;
+}
+
+.tww-coupon-result-mount {
+    width: 100%;
+}
+
+.tww-coupon-amount-saved {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--tww-green);
+}
+
+.mp-form-submit button {
+    background-color: var(--tww-green) !important;
+    color: var(--white) !important;
+    border: 2px solid var(--tww-green) !important;
+    border-radius: 4px !important;
+    height: 40px !important;
+    padding: 0 10px !important;
+    font-size: 14px !important;
+    width: 100% !important;
+}
+
+.mepr_coupon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.mepr_coupon input,
+.mepr_coupon button {
+    height: 40px;
+    padding: 0 10px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.mepr_coupon input {
+    border: 1px solid var(--tww-green) !important;
+    border-radius: 4px 0 0 4px;
+}
+
+.mepr_coupon button.radend {
+    border: 2px solid var(--tww-green) !important;
+    border-radius: 0 4px 4px 0 !important;
+    background-color: var(--tww-green) !important;
+    color: var(--white);
+}
+
+.twwe-apply-coupon {
+    position: relative;
+    width: 70px;
+    height: 40px;
+}
+
+/** Login Flow */
+
+.tww-plus-login__message {
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 500;
+    color: #121212;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 0 5px;
+}
+
+.tww-plus-login__fields-wrapper--email {
+    width: 100%;
+    position: relative;
+}
+
+.tww-plus-login__email {
+    background: white !important;
+}
+
+/* .register-template #tww-login-form .tww-plus-login__email.regular {
+    border-color: black !important;
+} */
+
+
+.tww-plus-login__fields-wrapper {
+/** padding? **/
+}
+
+.tww-plus-login__email-edit-link {
+    font-size: 14px;
+    color: var(--tww-dark-grey);
+    cursor: pointer;
+    text-decoration: underline;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    color: var(--tww-dark-grey);
+    font-weight: bold;
+    text-decoration: none;
+    display: none;
+}
+
+.tww-plus-login__email-edit-link.active {
+    display: flex;
+}
+
+.tww-plus-login__forgot-password-wrapper a {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: var(--tww-green);
+    display: block;
+}
+
+.tww-plus-login__forgot-password-wrapper,
+.tww-plus-login__fields-wrapper--password {
+    position: relative;
+    display: flex;
+    align-items: center;
+    opacity: 1;
+    max-height: 500px; 
+    height: auto;
+    visibility: visible;
+    transition: .3s all ease;
+}
+
+.tww-plus-login__fields-wrapper--password {
+    width: 100%;
+}
+
+.tww-plus-login__forgot-password-wrapper.init,
+.tww-plus-login__fields-wrapper--password.init {
+    opacity: 0;
+    max-height: 0;
+    visibility: hidden;
+    transition: .3s all ease;
+}
+
+.tww-plus-login__password--password {
+    background: transparent !important;
+}
+
+.register-template__review-terms {
+    font-size: 14px;
+}
+
+/** Card **/
+
+#tww-plus-button-continue-payment {
+    margin-top: 20px;
+}
+
+#twwe-purchase-description-button {
+    position: relative;
+}
+
+/**
+Skeleton
+**/
+/* Skeleton loader for text entries */
+.twwe-skeleton {
+    display: inline-block;
+    height: 16px;
+    width: 100%;
+    background-color: #f0f0f0;
+    background-image: linear-gradient(90deg, #f0f0f0, #e0e0e0, #f0f0f0);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    border-radius: 4px;
+    animation: skeleton-loading 1.5s infinite ease-in-out;
+    color: transparent;
+  }
+  
+  /* Smaller variant for labels */
+  .twwe-skeleton.small {
+    width: 60%;
+    height: 12px;
+  }
+  
+  @keyframes skeleton-loading {
+    0% {
+      background-position: 100% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  /* After loading */
+  .twwe-loaded {
+    background-color: transparent;
+    background-image: none;
+    animation: none;
+  }
+
+  .mepr-payment-methods-radios {
+    display: none;
+  }
+
+#header-space, 
+#header-outer, 
+#header-secondary-outer,
+header#top {
+    display: none !important;
+}

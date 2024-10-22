@@ -10,6 +10,7 @@ abstract class TwwfShortcodes {
         'handle' => null,
         'capability' => null,
         'permission_callback' => null,
+        'script_deps' => [],
     ];
 
     public function __construct() {
@@ -53,10 +54,16 @@ abstract class TwwfShortcodes {
                 throw $exception;
             }
 
+            $deps = ['jquery'];
+
+            if($this->sc_settings['script_deps'] && is_array($this->sc_settings['script_deps'])) {
+                $deps = array_merge($deps, $this->sc_settings['script_deps']);
+            }
+
             wp_register_script(
                 $handle,
                 $resource,
-                ['jquery'],
+                $deps,
                 TWW_FORMS_AUTH0_ASSETS_VERSION,
                 true
             );

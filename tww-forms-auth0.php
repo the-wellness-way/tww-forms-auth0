@@ -28,7 +28,7 @@
  }
 
  if(!defined('TWW_FORMS_AUTH0_ASSETS_VERSION')) {
-     define('TWW_FORMS_AUTH0_ASSETS_VERSION', '1.1.13');
+     define('TWW_FORMS_AUTH0_ASSETS_VERSION', '1.1.42');
  }
 
  require_once 'vendor/autoload.php';
@@ -58,6 +58,9 @@ $twwfAuth0Login = new TwwfAuth0Login();
 use TwwFormsAuth0\Flows\TwwfPrelogin;
 $twwfPrelogin = new TwwfPrelogin();
 
+use TwwFormsAuth0\Shortcodes\TwwfAuth0TokenLinkShortcode;
+$twwfAuth0TokenLinkShortcode = new TwwfAuth0TokenLinkShortcode();
+
 add_action('validate_username', '__return_true');
 
 function enqueue_tww_forms_auth0_webpack() {  
@@ -66,14 +69,13 @@ function enqueue_tww_forms_auth0_webpack() {
     $file = false !== strpos($_SERVER['HTTP_HOST'],'localhost') ? 'main' : 'index';
     $url = TWW_FORMS_AUTH0_PLUGIN_URL . 'resources/dist/' . $file . '.bundle.js';
 
-    $localized_object = [
-        'tww_forms_auth0' => [
-                'active' => true
-        ]
-    ];
-
     wp_register_script('tww-forms-auth0-webpack', $url, array(), $version, true);
     wp_enqueue_script('tww-forms-auth0-webpack');
+    $localized_object = [
+        'tww_forms_auth0' => [
+            'active' => true
+        ]
+    ];
     wp_localize_script('tww-forms-auth0-webpack', 'tww_forms_auth0', $localized_object);
 }
 
