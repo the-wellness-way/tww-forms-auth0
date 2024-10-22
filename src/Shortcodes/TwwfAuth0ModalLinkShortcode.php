@@ -4,7 +4,7 @@ namespace TwwFormsAuth0\Shortcodes;
 class TwwfAuth0ModalLinkShortcode extends TwwfShortcodes {
     public function set_sc_settings() {
         $this->sc_settings = [
-            'name' => 'tww_auth0_modal_link',
+            'name' => 'tww_auth0_token',
         ];
     }
 
